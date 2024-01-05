@@ -9,6 +9,7 @@ public static class TwoSumSolution
         {
             return null;
         }
+
         for (int i = 0; i < nums.Length - 1; i++)
         {
             for (int j = i + 1; j < nums.Length; j++)

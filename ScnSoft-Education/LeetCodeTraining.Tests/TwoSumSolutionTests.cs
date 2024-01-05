@@ -18,6 +18,7 @@ namespace LeetCodeTraining.Tests
             //Assert          
             Assert.Equal(expectedResult, result);
         }
+
         [Fact]
         public void TwoSum_ArrayWith4Nums()
         {
@@ -32,6 +33,7 @@ namespace LeetCodeTraining.Tests
             //Assert
             Assert.Equal(expectedResult, result);
         }
+
         [Fact]
         public void TwoSum_ArrayWith3Nums()
         {
