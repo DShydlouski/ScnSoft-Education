@@ -7,7 +7,7 @@ namespace LeetCodeTraining.Tests
         [InlineData("babad", "bab")]
         [InlineData("cbbd", "bb")]
         [InlineData("abbacfcd", "abba")]
-        public static void Test1(string s, string expected)
+        public static void LongestPalindromicSubstringSolutionTests(string s, string expected)
         {
             //Arrange
             string result = LongestPalindromicSubstringSolution.LongestPalindrome(s);
