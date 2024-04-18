@@ -4,49 +4,17 @@ namespace LeetCodeTraining.Tests
 {
     public class TwoSumSolutionTests
     {
-        [Fact]
-        public void TwoSum_ArrayWith2Nums()
-        {
-            //Arrange
-            int[] nums = { 3, 3 };
-            int target = 6;
-            int[] expectedResult = { 0, 1 };
-
+        [Theory]
+        [InlineData((int[])[3, 3], 6, (int[])[1,0])]
+        [InlineData((int[])[2, 7, 11, 15], 9, (int[])[1, 0])]
+        [InlineData((int[])[3, 2, 4], 6, (int[])[2, 1])]
+        public void TwoSumTests(int[] nums, int target, int[] expected)
+        {          
             //Act
             int[] result = TwoSumSolution.TwoSum(nums, target);
 
             //Assert          
-            Assert.Equal(expectedResult, result);
-        }
-
-        [Fact]
-        public void TwoSum_ArrayWith4Nums()
-        {
-            //Arrange
-            int[] nums = { 2, 7, 11, 15 };
-            int target = 9;
-            int[] expectedResult = { 0, 1 };
-
-            //Act
-            int[] result = TwoSumSolution.TwoSum(nums, target);
-
-            //Assert
-            Assert.Equal(expectedResult, result);
-        }
-
-        [Fact]
-        public void TwoSum_ArrayWith3Nums()
-        {
-            //Arrange
-            int[] nums = { 3, 2, 4 };
-            int target = 6;
-            int[] expectedResult = { 1, 2 };
-
-            //Act
-            int[] result = TwoSumSolution.TwoSum(nums, target);
-
-            //Assert
-            Assert.Equal(expectedResult, result);
+            Assert.Equal(expected, result);
         }
     }
 }
