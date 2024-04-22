@@ -4,7 +4,6 @@ namespace LeetCodeTraining.Tests
 {
     public class AddTwoNumsTests
     {
-
         [Fact]
         public void AddTwoNumbersSolutionTests_Expected_708()
         {
