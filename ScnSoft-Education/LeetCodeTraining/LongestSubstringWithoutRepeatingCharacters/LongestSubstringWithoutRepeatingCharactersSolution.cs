@@ -5,7 +5,12 @@
     {
         public static int LengthOfLongestSubstring(string s)
         {
-            string buff = "";
+            if (String.IsNullOrEmpty(s))
+            {
+                return 0;
+            }
+
+            string buff = string.Empty;
             int count = 0;
             for (int i = 0; i < s.Length; i++)
             {
@@ -17,6 +22,7 @@
                     {
                         count = buff.Length;
                     }
+
                     buff = "";
                 }
                 else
@@ -24,10 +30,12 @@
                     buff += s[i];
                 }
             }
+
             if (count < buff.Length)
             {
                 count = buff.Length;
             }
+
             return count;
         }
     }

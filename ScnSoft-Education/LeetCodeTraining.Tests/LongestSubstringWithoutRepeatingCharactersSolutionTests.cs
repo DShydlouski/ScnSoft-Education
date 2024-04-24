@@ -8,14 +8,13 @@ namespace LeetCodeTraining.Tests
         [InlineData("abcabcbb",3)]
         [InlineData("bbbbb", 1)]
         [InlineData("pwwkew", 3)]
-        public void LengthOfLongestSubstringSolutionTests(string value1, int value2)
+        public void LengthOfLongestSubstringSolutionTests(string input, int expected)
         {
             //Arrange
-            int result = LongestSubstringWithoutRepeatingCharactersSolution.LengthOfLongestSubstring(value1);
-
+            int result = LongestSubstringWithoutRepeatingCharactersSolution.LengthOfLongestSubstring(input);
 
             //Assert
-            Assert.Equal(value2, result);
+            Assert.Equal(expected, result);
         }
     }
 }
