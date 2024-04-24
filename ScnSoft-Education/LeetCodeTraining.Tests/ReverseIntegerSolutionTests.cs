@@ -5,9 +5,9 @@ namespace LeetCodeTraining.Tests
     public class ReverseIntegerSolutionTests
     {
         [Theory]
-        [InlineData(123,321)]
-        [InlineData(-123,-321)]
-        [InlineData(120,21)]
+        [InlineData(123, 321)]
+        [InlineData(-123, -321)]
+        [InlineData(120, 21)]
         public void ReverseInegerTest(int input, int expected)
         {
             //Arange
