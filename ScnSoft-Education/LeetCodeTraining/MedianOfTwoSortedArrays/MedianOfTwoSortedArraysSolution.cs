@@ -10,6 +10,11 @@ namespace LeetCodeTraining.MedianOfTwoSortedArrays
     {
         public static double FindMedianSortedArrays(int[] nums1, int[] nums2)
         {
+            if (nums1 == null && nums2 == null)
+            {
+                return 0D;
+            }
+
             int x = nums1.Length;
             int y = nums2.Length;
             int[] buffResult = new int[x + y];
@@ -25,13 +30,13 @@ namespace LeetCodeTraining.MedianOfTwoSortedArrays
             if (isEven)
             {
                 result = (buffResult[middle - 1] + buffResult[middle]) / 2D;
-                return result;
             }
             else
             {
                 result = buffResult[middle];
-                return result;
             }
+
+            return result;
         }
     }
 }
